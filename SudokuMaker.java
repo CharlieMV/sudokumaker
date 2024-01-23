@@ -74,7 +74,6 @@ public class SudokuMaker {
 			puzzle[row][col] = rand;
 			//	Check if number matches row, col, and 3 x 3
 			if (!isDupe(row, col)) {
-				System.out.println(rand + " fits " + row + ", " + col);
 				//	If next square is true, this is valid
 				isValid = fillSquare(row, col + 1);
 			}
